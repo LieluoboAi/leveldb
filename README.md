@@ -7,10 +7,10 @@ Add to your WORKSPACE
 ```
 http_archive(
     name = "com_github_lieluoboai_leveldb",
-    strip_prefix = "leveldb-aa785abf30e043110a6258eeefad25ae4d27f677",
-    sha256 = "b484e7a4777741c82d265d1192985d9e662b2e0a193638253ebb3060ac62890c",
+    strip_prefix = "leveldb-3d51bafc1764d7115db5f83b4a838bc6e630449a",
+    sha256 = "2c8815db8f1b5031e62d530e13ef31242f85ebcc6c7b486d8897474df482786f",
     urls = [
-        "https://github.com/cschuet/leveldb/archive/aa785abf30e043110a6258eeefad25ae4d27f677.tar.gz",
+        "https://github.com/cschuet/leveldb/archive/3d51bafc1764d7115db5f83b4a838bc6e630449a.tar.gz",
     ],
 )
 
@@ -25,6 +25,7 @@ repositories()
 load("@com_github_lieluoboai_crc32c//:bazel/repositories.bzl", "repositories")
 
 repositories()
+
 ```
 
 Compile with
