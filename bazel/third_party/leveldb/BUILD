@@ -2,8 +2,7 @@ licenses(["notice"])
 
 exports_files(
     [
-        "leveldb.BUILD",
-	"port.h",
+    "leveldb.BUILD",
 	"port_config.h",
     ],
     visibility = ["//visibility:public"],

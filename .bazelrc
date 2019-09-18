@@ -1,2 +1,4 @@
 build -c opt
 build --force_pic
+build --genrule_strategy=standalone
+build --spawn_strategy=standalone
