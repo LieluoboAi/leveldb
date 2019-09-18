@@ -6,7 +6,7 @@ Add to your WORKSPACE
 
 ```
 http_archive(
-    name = "com_github_cschuet_leveldb",
+    name = "com_github_lieluoboai_leveldb",
     strip_prefix = "leveldb-aa785abf30e043110a6258eeefad25ae4d27f677",
     sha256 = "b484e7a4777741c82d265d1192985d9e662b2e0a193638253ebb3060ac62890c",
     urls = [
@@ -14,15 +14,15 @@ http_archive(
     ],
 )
 
-load("@com_github_cschuet_leveldb//:bazel/repositories.bzl", "repositories")
+load("@com_github_lieluoboai_leveldb//:bazel/repositories.bzl", "repositories")
 
 repositories()
 
-load("@com_github_cschuet_snappy//:bazel/repositories.bzl", "repositories")
+load("@com_github_lieluoboai_snappy//:bazel/repositories.bzl", "repositories")
 
 repositories()
 
-load("@com_github_cschuet_crc32c//:bazel/repositories.bzl", "repositories")
+load("@com_github_lieluoboai_crc32c//:bazel/repositories.bzl", "repositories")
 
 repositories()
 ```
@@ -39,6 +39,6 @@ bazel test @com_github_google_leveldb//...
 
 ## Limitations
 * uses FDATASYNC
-* uses [Google Snappy](https://github.com/cschuet/snappy)
-* uses [Google crc32c](https://github.com/cschuet/crc32c)
+* uses [Google Snappy](https://github.com/LieluoboAi/snappy)
+* uses [Google crc32c](https://github.com/LieluoboAi/crc32c)
 * assumes little endian
